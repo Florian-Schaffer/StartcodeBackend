@@ -70,7 +70,7 @@ public class User implements Serializable {
   }
 
   public String getUserPass() {
-    return this.userPass = BCrypt.hashpw(userPass, BCrypt.gensalt());
+    return userPass;
   }
 
   public void setUserPass(String userPass) {
